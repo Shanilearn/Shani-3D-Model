@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shani 3D Model</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" href="s3dm.css">
+
+</head>
+<body>
+    <div class="dm">
+      <model-viewer id="model" src="RobotExpressive.glb"  auto-rotate camera-controls
+        skybox-image="stadium_01_4k.hdr" animation-name="Running" autoplay ar></model-viewer> 
+     <!-- <model-viewer  id="model" src="Astronaut.glb"  auto-rotate camera-controls
+    skybox-image="stadium_01_4k.hdr" animation-name="Running " autoplay ar></model-viewer>  -->
+
+        <div class="btn-container">
+            <button type="button" onclick="stop()"> STOP</button>
+            <button type="button" onclick="run()"> RUN</button>
+            <button type="button" onclick="wave()"> WAVE</button>
+        </div>
+    </div>
+
+    <script src="s3dm.js">
+
+    </script>
+</body>
+</html>
